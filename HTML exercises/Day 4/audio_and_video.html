@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multimedia files html</title>
+
+    <script src="drag&drop.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Audio and Video</h2><br>
+    <audio controls>
+        <source src="John Cena - Theme Music.mp3" type="audio/mp3">The audio files doesn't supported
+    </audio><br><hr>
+
+    <h2>Video Format</h2>
+
+    <video controls>
+        <source src="Attitude-WhatsApp-status-Reigns-entry-Roman-2018-Cell-Hell-WWE-in-a.mp4" type="video/mp4"
+            height="100%" width="50%">The Video files aren't supported
+    </video><br /><br />
+    <section>
+        <hr>
+        <h2>Website</h2>
+        <iframe src="https://www.iplt20.com/" frameborder="0" width="100%" height="400" allowfullscreen></iframe><br/><br/><hr>
+        <h2>Youtube iframe</h2>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"" frameborder="0" width="100%" height="300" allowfullscreen></iframe>
+    </section>
+    <hr>
+
+    <section>
+        <h3>Drag and Drop</h3>
+
+        <img id="box" src="logo.jfif" draggable="true" ondragstart="drag(event)" width="150" height="150">
+
+        <div id="drag" ondrop="drop(event)" ondragover="allowDrop(event)"></br></br>
+
+    </section>
+    <hr>
+
+    <section>
+        <h2>Local Storage and Session Storage</h2>
+        <form>
+            <label for="data">Enter Temporary Data</label>
+            <input type="text" id="data">
+
+            <input type="button" id="submit" value="submit" onclick="storeData()" />
+            <input type="button" id="submit1" value="retrive" onclick="retriveData()" style="margin-left: 147px; margin-top: 1%; cursor:pointer;"/>
+            <p id="output"></p>
+        </form>
+    </section>
+
+
+</body>
+
+</html>

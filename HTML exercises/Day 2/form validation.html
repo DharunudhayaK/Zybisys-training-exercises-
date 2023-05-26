@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FORM VALIDATION</title>
+	<link rel="stylesheet" href="formscc.css">
+</head>
+
+<body style="background-color:lightgray;">
+	<div id="usecolors">
+
+		<h2 id="title">FORM VALIDATION</h2><br>
+
+		<form>
+			<label for="name" class="content">NAME</label>
+			<input type="text" id="n" name="name" class="boxlayout" placeholder="Enter your name" required
+				pattern="[A-Za-z]+" title="Give your name"></br></br>
+
+			<label for="uname" class="content">USERNAME</label>
+			<input type="text" id="uname" name="uname" class="boxlayout" placeholder="Enter your User Name"
+				pattern="[A-Z]{1}[a-z]+" required title="give one capital format atleast" /></br></br>
+
+			<label for="mail" class="content">EMAIL</label>
+			<input type="email" id="ma" name="mail" class="boxlayout" placeholder="Enter your mail"
+				required /></br></br>
+
+			<label for="pword" class="content">PASSWORD</label>
+			<input type="password" id="pass" name="pword" class="boxlayout" placeholder="Correct Password" maxlength="9"
+				pattern="[A-Z]{1}[a-z]{6}[@#$%^&
+]{1}[0-9]{1}" required title="plese give valid password" /></br></br>
+
+			<label for="age" class="content">AGE</label>
+			<input type="number" id="agenow" class="boxlayout" name="age" placeholder="Enter your age" min="10" max="35"
+				title="age between 10 and 35" required /></br></br>
+
+			<label for="gen" class="content">GENDER</label>
+			<select name="gen" id="gen" class="boxlayout">
+				<option value="" class="boxlayout">select</option>
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				<option value="Transgender">Transgender</option>
+				<option value="Others">Others</option>
+			</select>
+			</br></br>
+
+			<label for="dob" class="content">DOB</label>
+			<input type="date" id="dateofbirth" class="boxlayout" name="dob" placeholder="Enter your dob" required
+				min="12-09-2015" /></br></br>
+
+			<label for="time" class="content">TIME</label>
+			<input type="time" id="date" class="boxlayout" name="time" required /></br></br>
+
+			<label for="phno" class="content">CONTACT NUMBER</label>
+			<input type="tel" name="phno" class="boxlayout" id="tel" placeholder="10 digit mobile number" minlength="10"
+				maxlength="10" pattern="[789]{0-9}{9}" title="give 10 digit" required /></br></br>
+
+			<label for="address" class="content">ADDRESS</label>
+			<textarea type="text" id="address" class="boxlayout" placeholder="Enter your address" minlength="3"
+				maxlength="5" required></textarea></br></br>
+
+			<label for="lang" class="content">LANGUAGE</label>
+			<select name="movies" id="movie" class="boxlayout">
+				<option value="">select</option>
+				<option value="Tamil">Tamil</option>
+				<option value="English">English</option>
+				<option value="Hindi">Hindi</option>
+				<option value="Malayalam">Malayalam</option>
+				<option value="Others">Others</option>
+			</select>
+			</br></br>
+
+			<label for="skills" class="content">TECHNICAL SKILLS</label></br></br>
+
+			<input type="checkbox" class="boxlayout" id="ch1" name="ch1" />
+			<label for="ch1" class="lang">Javascript</label></br>
+
+			<input type="checkbox" class="boxlayout" id="ch2" name="ch2" />
+			<label for="ch1" class="lang">C++</label></br>
+
+
+			<input type="checkbox" class="boxlayout" id="ch3" name="ch3" />
+			<label for="ch3" class="lang">Java</label></br>
+
+			<input type="checkbox" class="boxlayout" id="ch4" name="ch4" />
+			<label for="ch4" class="lang">HTML</label></br>
+
+			<input type="checkbox" class="boxlayout" id="ch5" name="ch5" />
+			<label for="ch5" class="lang">css</label></br></br>
+			<input type="submit" class="boxlayout" id="click" name="click" value="submit">
+
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+#usecolors {
+	margin: auto;
+	width: 60%;
+	border: 2px solid rgb(187, 191, 194);
+	padding: 10px;
+	background-color: white;
+}
+
+#title {
+	color: black;
+	text-align: left;
+}
+
+.content {
+	font-size: 17px;
+	font-weight: bold;
+	left: 400px;
+}
+
+.boxlayout {
+	justify-content: left;
+	position: absolute;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+
+.lang {
+	left: 220px;
+	position: absolute;
+}
