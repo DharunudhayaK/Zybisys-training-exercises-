@@ -1,0 +1,122 @@
+#body-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#body--para2-containers {
+    margin-right: 20%;
+}
+
+.body-container--header {
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 50px;
+    color: #5f0675;
+    margin: 5px;
+    letter-spacing: 1px;
+}
+
+.rate-containers {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color:#634e69;
+}
+
+.rate1-containers {
+    margin-left: 70%;
+    border-radius: 7px #cce7e8;
+    background-color: #f7f2f8;
+    border-radius: 8px;
+    margin: 2px;
+    margin-top: 13%;
+    margin-right: 37%;
+    padding: 2px;
+}
+
+.rate2-containers {
+    margin: 2%;
+    border-radius: 7px #cce7e8;
+    background-color: #f7f2f8;
+    border-radius: 8px;
+    margin-left: 10%;
+    margin-right: 30%;
+    padding-left: 2px;
+    padding: 2px;
+}
+
+.rate3-containers {
+    margin-left: 20%;
+    margin-right: 19%;
+    border-radius: 7px #cce7e8;
+    background-color: #f7f2f8;
+    border-radius: 8px;
+    padding-left: 2px;
+    padding: 2px;
+}
+
+#body--para2-containers {
+    font-size: 20px;
+    color: #634e69;
+    text-align: justify;
+}
+
+#head-footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+
+}
+
+.foot-box1 {
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #511f50;
+    color: whitesmoke;
+    margin-bottom: 15%;
+}
+
+.foot-box2 {
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #511f50;
+    color: whitesmoke;
+    margin-bottom: 8%;
+}
+
+.foot-box3 {
+    margin-top: 90px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #511f50;
+    color: whitesmoke;
+}
+
+
+.foot--image {
+    display: flex;
+}
+
+.image {
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 2px solid whitesmoke;
+}
+
+.foot--desc {
+    font-size: 13px;
+    margin: 2px;
+}
+
+.author-name {
+    padding-top: 15px;
+    margin: 1px;
+}
+
+.footer-name-about {
+    padding: 10px;
+}
