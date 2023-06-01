@@ -1,0 +1,24 @@
+#flex-containers{
+    background-color: #ffe4c4;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+
+.box-containers{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #f0f8ff;
+    pointer-events: none;
+}
+
+.btn{
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.box-containers:hover{
+    background: rgb(163, 224, 226);
+}

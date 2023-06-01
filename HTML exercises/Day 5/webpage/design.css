@@ -1,0 +1,23 @@
+#title
+{
+    font-family: monospace;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+#titlebelow
+{
+    font-family: monospace;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+#topic
+{
+    display: grid;
+    background-color: rgb(252, 238, 214);
+    border-radius: 2px;
+    padding-left: 30px;
+    border-radius: 2px;
+    padding-bottom: 30px;
+    text-align: left;
+}
