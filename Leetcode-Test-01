@@ -1,0 +1,33 @@
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var searchRange = function(nums, target) {
+    let out=0;
+    let search = [];
+    let ans = [];
+    let inn=0;
+    //let minus = [-1,-1];
+    if(nums == null)
+    {
+        return -1;
+    }
+    else{
+    while(out < nums.length)
+    {
+        if(nums[out] == target)
+        {
+            search[inn] = out;
+            inn++;
+        }
+        out++;
+    }
+    if(search == ans){
+        return -1;
+    }
+    else{
+        return search;
+    }
+    }
+};
