@@ -1,0 +1,34 @@
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var firstMissingPositive = function(nums) {
+    let out=0;
+    let obj = {};
+    //var cal = 1;
+    while(out < nums.length)
+    {
+        let index = nums[out];
+        if(obj[index] != null){
+            out++
+        }
+        else{
+            continue
+        }
+    }
+     for(let inn=0; inn<obj.length; inn++)
+     {
+         let cal = obj[inn++]
+         if(obj[inn] != cal)
+         {
+             return cal
+         }
+    //     if(obj[inn] != cal)
+    //     {
+    //         return cal;
+    //     }
+    //     else{
+    //         cal++;
+    //     }
+     }
+};
