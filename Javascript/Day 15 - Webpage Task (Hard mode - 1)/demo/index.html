@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="form">
+            <h2>Contact form</h2>
+            <form action="" id="myForm">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+<br/>
+<br/>
+<br/>
+        <section id="table">
+            <table id="myTable" border = "2">
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <script>
+        function deleteSelected(){
+            let checkbox = document.querySelectorAll(".checkbox")
+
+            let checkedbox = checkbox.filter(function(data){
+                return data.checked
+            })
+
+            checkedbox.forEach(function(data){
+                row.parentNode.removeChild(data)
+            })
+        }
+    </script>
+    
+</body>
+</html>

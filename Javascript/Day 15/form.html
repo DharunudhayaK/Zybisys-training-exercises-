@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+
+<body>
+
+    <h2 id="head-label">details</h2>
+
+    <main>
+        <section>
+            <form id="form-label">
+
+                <div class="direction-label">
+                    <label for="name" class="label-part">name:</label>
+                    <input type="text" name="name" placeholder="Enter your name" id="name-label" class="box-label"
+                        required pattern="[A-Za-z]+" />
+                </div>
+
+                <div class="direction-label">
+                    <label for="mail" class="label-part">email</label>
+                    <input type="email" name="mail" id="mail-label" class="box-label" placeholder="Enter your mail"
+                        required />
+                </div>
+
+                <div class="direction-label">
+                    <label for="age" class="label-part">AGE</label>
+                    <input type="number" class="box-label" id="age-label" name="age" placeholder="Enter your age"
+                        min="10" max="35" title="age between 10 and 35" required />
+                </div>
+
+                <div class="direction-label">
+                    <label for="dob" class="label-part">DOB</label>
+                    <input type="date" id="dateofbirth-label" class="box-label" name="dob" placeholder="Enter your dob"
+                        required />
+                </div>
+
+                <input type="submit" value="submit" class="btn" />
+
+            </form>
+
+        </section>
+
+        <section>
+            <h2>Table</h2>
+            <table id="table-label">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>mail</th>
+                        <th>age</th>
+                        <th>Dob</th>
+                        <th id="edit-label">option</th>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+    </main>
+
+    <script>
+
+        //prevent default method
+
+        //        let row = null
+        document.getElementById("form-label").addEventListener("submit", function (event) {
+            event.preventDefault()
+
+            let name = document.getElementById('name-label').value
+            let mail = document.getElementById('mail-label').value
+            let age = document.getElementById('age-label').value
+            let date = document.getElementById('dateofbirth-label').value
+
+            let tab = document.getElementById('table-label')
+
+            let row = tab.insertRow()
+
+            let cell1 = row.insertCell();
+            let cell2 = row.insertCell();
+            let cell3 = row.insertCell();
+            let cell4 = row.insertCell();
+            let cell5 = row.insertCell();
+
+            cell1.innerHTML = name
+            cell2.innerHTML = mail
+            cell3.innerHTML = age
+            cell4.innerHTML = date
+            cell5.innerHTML = '<input type="button" value="Edit" onclick="editData()"/>'
+
+        })
+
+
+        function editData() {
+            let n1 = document.getElementById('name-label').value
+            let m1 = document.getElementById('mail-label').value
+            let a1 = document.getElementById('age-label').value
+            let d1 = document.getElementById('dateofbirth-label').value
+
+            let inp1 = row.innerHTML
+            let inp2 = row.innerHTML
+            let inp3 = row.innerHTML
+            let inp4 = row.innerHTML
+
+            insertedData(inp1,inp2,inp3,inp4)
+
+            function insertedData(inp1, inp2, inp3, inp4) {
+                n1.innerHTML = inp1
+                n2.innerHTML = inp2
+                n3.innerHTML = inp3
+                n4.innerHTML = inp4
+            }
+        }
+
+
+
+
+
+
+
+           // let capture = inputValue()
+
+            // function inputValue(){
+            //     let cap1 = {}
+
+            // }
+            // let formValue = readValue()
+
+            // if (row == null) {
+            //     applyValue('form-label')
+            // }
+            // else {
+            //     resetOption('form-label')
+            // }
+            // let cell1 = []
+            // let cell2 = []
+            // let cell3 = []
+            // let cell4 = []
+            // let out = 1
+            // let inn = 0
+
+            // function insertData(){
+            //     let row = document.getElementById("table-label")
+            //     let rowapply = insertData.insertRow(out)
+
+            //     cell1[inn] = document.getElementById('name-label').value
+            //     cell2[inn] = document.getElementById('mail-label').value
+            //     cell3[inn] = document.getElementById('age-label').value
+            //     cell4[inn] = document.getElementById('dateofbirth-label').value
+
+            //     let row1 = rowapply.insertCell(0)
+            //     let row2 = rowapply.insertCell(1)
+            //     let row3 = rowapply.insertCell(2)
+            //     let row4 = rowapply.insertCell(3)
+
+            //     row1.innerHTML = cell1[inn]
+            //     row2.innerHTML = cell1[inn]
+            //     row3.innerHTML = cell1[inn]
+            //     row4.innerHTML = cell1[inn]
+
+            //     out++
+            //     inn++
+            // }
+                //lineValue()
+        // function lineValue(){
+        //     let nameCap = document.getElementById("name-label").value
+        //     let mailCap = document.getElementById("mail-label").value
+        //     let ageCap = document.getElementById("age-label").value
+        //     let dateCap = document.getElementById("dateofbirth-label").value
+        //     return lineValue()
+        // }
+
+        // function applyValue(){
+        //     let are = document.getElementById('table-label').getElementsByTagName('tbody[0]')
+        //     let rowValue = are.insertRow(are.length)
+
+
+        //     cell1 = rowValue.insertCell(0)
+        //     cell1.innerHTML = nameCap
+
+        //     cell2 = rowValue.insertCell(1)
+        //     cell2.innerHTML = mailCap
+
+        //     cell3 = rowValue.insertCell(2)
+        //     cell3.innerHTML = nameCap
+
+        //     cell4 = rowValue.insertCell(3)
+        //     cell4.innerHTML = nameCap
+
+        //     //cell4.innerHTML =
+        // }
+
+    </script>
+
+
+</body>
+
+</html>

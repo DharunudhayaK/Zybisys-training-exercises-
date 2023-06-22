@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form2.css">
+
+</head>
+
+<body>
+
+    <h2 id="head-label">details</h2>
+
+    <main>
+        <section>
+            <form id="form-label">
+
+                <div class="direction-label">
+                    <label for="name" class="label-part">name:</label>
+                    <input type="text" name="name" placeholder="Enter your name" id="name-label" class="box-label"
+                        required pattern="[A-Za-z]+" />
+                </div>
+
+                <div class="direction-label">
+                    <label for="mail" class="label-part">email</label>
+                    <input type="email" name="mail" id="mail-label" class="box-label" placeholder="Enter your mail"
+                        required />
+                </div>
+
+                <div class="direction-label">
+                    <label for="age" class="label-part">AGE</label>
+                    <input type="number" class="box-label" id="age-label" name="age" placeholder="Enter your age"
+                        min="10" max="35" title="age between 10 and 35" required />
+                </div>
+
+                <div class="direction-label">
+                    <label for="dob" class="label-part">DOB</label>
+                    <input type="date" id="date-label" class="box-label" name="dob" placeholder="Enter your dob"
+                        required />
+                </div>
+
+                <input type="submit" value="submit" class="btn" />
+
+            </form>
+
+        </section>
+
+        <section>
+            <h2>Table</h2>
+            <table id="table-label">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>mail</th>
+                        <th>age</th>
+                        <th>Dob</th>
+                        <th id="edit-label">option</th>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+    </main>
+
+    <script>
+
+        let rowSelect = null
+
+        document.getElementById("form-label").addEventListener("submit", function (event) {
+            event.preventDefault()
+
+            let name = document.getElementById('name-label').value
+            let mail = document.getElementById('mail-label').value
+            let age = document.getElementById('age-label').value
+            let date = document.getElementById('date-label').value
+
+            if (rowSelect == null) {
+                insertData(name, mail, age, date)
+            }
+            else {
+                updateData(name, mail, age, date)
+            }
+
+            document.getElementById('form-label').reset()
+        })
+
+        function insertData(name, mail, age, date) {
+            let table = document.getElementById("table-label")
+
+            let row = table.insertRow(1)
+
+            let cell1 = row.insertCell(0)
+            cell1.innerHTML = name
+
+            let cell2 = row.insertCell(1)
+            cell2.innerHTML = mail
+
+            let cell3 = row.insertCell(2)
+            cell3.innerHTML = age
+
+            let cell4 = row.insertCell(3)
+            cell4.innerHTML = date
+
+            let cell5 = row.insertCell(4)
+            cell5.innerHTML = '<input type="button" value="edit-data" onclick="editData(this)">' + ' ' + '<input type="button" value="delete-data" onclick="deleteNode(this)"/>'
+        }
+
+        function editData(input1) {
+            let row = input1.parentNode.parentNode
+
+            rowSelect = row
+
+            document.getElementById("name-label").value = row.cells[0].innerHTML
+            document.getElementById("mail-label").value = row.cells[1].innerHTML
+            document.getElementById("age-label").value = row.cells[2].innerHTML
+            document.getElementById("date-label").value = row.cells[3].innerHTML
+
+            let submit = document.querySelector("input[type=submit]")
+            submit.value = "Update"
+        }
+
+
+        function updateData(name, mail, age, date) {
+            rowSelect.cells[0].innerHTML = name
+            rowSelect.cells[1].innerHTML = mail
+            rowSelect.cells[2].innerHTML = age
+            rowSelect.cells[3].innerHTML = date
+
+            let submit = document.querySelector("input[type=submit]")
+            submit.value = "Submit"
+
+            rowSelect = null
+        }
+
+        function deleteNode(input2) {
+            let rowdel = input2.parentNode.parentNode
+
+            // document.getElementById("name-label").value = row.cells[0].innerHTML
+            // document.getElementById("mail-label").value = row.cells[1].innerHTML
+            // document.getElementById("age-label").value = row.cells[2].innerHTML
+            // document.getElementById("date-label").value = row.cells[3].innerHTML
+
+            let alert = confirm("please click ok button to confirm")
+
+            if (alert) {
+                rowdel.parentNode.removeChild(rowdel)
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

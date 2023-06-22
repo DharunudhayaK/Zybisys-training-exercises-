@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p id="head">hello</p>
+        <input type="button" value="refer-table" id="btn"/>
+    </div>
+
+    <div id="store-label"></div>
+    
+    <table id="table-label" style="border-collapse: collapse; border: 2px solid black;">
+        <tr>
+            <th>Name</th>
+            <th>age</th>
+        </tr>
+        <tr style="border: 1px solid black;">
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <script>
+        let capture = document.getElementById('head').innerHTML
+        document.getElementById('btn').addEventListener("click", function() {
+            
+            let print = document.getElementById('table-label')
+
+            let row = print.insertRow()
+
+            let cell1 = row.insertCell()
+            cell1.innerHTML = capture
+
+            let cell2 = row.insertCell()
+            cell2.innerHTML = 21
+            
+
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <label for="name">Input-Box</label>
+            <input type="text" placeholder="Enter input" id="input-box" id="input-box" />
+
+            <input type="button" value="click" onclick="clickData()" id="btn" />
+
+            <ul id="unorder-list">
+
+            </ul>
+        </section>
+    </main>
+
+    <script>
+
+        let capture = document.getElementById('input-box')
+        let btn = document.getElementById('btn')
+
+        function submitting(isSubmitting) {
+            if (isSubmitting) {
+                btn.value = "Loading..."
+                btn.disabled = true
+            }
+            else {
+                btn.value = "submit"
+                btn.disabled = false
+            }
+        }
+
+        function restoreData(inputData) {
+            return new Promise(function (resolve, reject) {
+                submitting(true)
+                setTimeout(function () {
+                    if (inputData.length <= 10) {
+                        resolve(inputData)
+                    }
+                    else {
+                        reject("choose character length between 10")
+                    }
+                    submitting(false)
+                }, 3500)
+            })
+        }
+
+        
+        function clickData() {  
+            let inputValue = capture.value          
+            restoreData(inputValue)
+                .then(function (data) {
+                    gotResponse(data)
+                    clearInput()
+                })
+                .catch(function (sorry) {
+                    alert(sorry)
+                })
+        }
+
+        function clearInput() {
+            let inputValue = capture.value
+            inputValue.value = " "
+        }
+
+        function gotResponse(input) {
+            let ul = document.getElementById('unorder-list')
+            let li = document.createElement('li')
+            li.innerHTML = input
+            ul.appendChild(li)
+        }
+
+    </script>
+</body>
+
+</html>
