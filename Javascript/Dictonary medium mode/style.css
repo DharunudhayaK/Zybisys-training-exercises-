@@ -1,0 +1,262 @@
+#body-section--label {
+    /* border: 1px solid black; */
+    width: 50%;
+    margin: auto;
+}
+
+#top-content-conatiner-A {
+    display: flex;
+    /* border: 1px solid red; */
+    /* margin: 2px; */
+    justify-content: space-between;
+}
+
+.top-content-container-C {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+#formLabel {
+    display: flex;
+    border: 1px solid black;
+    height: 31%;
+    position: relative;
+    top: 10px;
+    border-radius: 20px;
+    padding: 4px;
+    width: 16%;
+}
+
+.top-content-container-img-A {
+    padding: 5px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+#select-container-top {
+    width: 60px;
+    /* position: relative;
+    left: 65%; */
+    border: none;
+}
+
+.navLabelB {
+    display: flex;
+}
+
+.section-A-line-container {
+    border: 1px solid #8f8f93;
+    height: 28px;
+    margin-top: 10px;
+    /* position: relative;
+    left: 67%; */
+}
+
+.body-content-label-A {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+
+.searchLabel-outer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box-container {
+    position: relative;
+    width: 93%;
+    height: 12px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #f4f4f4;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #272727;
+}
+
+.body-button-container {
+    position: absolute;
+    left: 82%;
+    top: 18px;
+    border: none;
+    border-radius: 50%;
+}
+
+.captureInputstyleA {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 5px 0px 5px 15px;
+}
+
+.audio--Label {
+    margin: 10px 15px 5px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+.captureInputstyleB {
+    color: #9460c8;
+    margin: 5px 0px 5px 15px;
+    font-weight: bold;
+}
+
+.section-label-B {
+    margin-left: 15px;
+    font-weight: 600;
+    display: none;
+    font-style: italic;
+}
+
+.lineLabel {
+    border: 1px solid #ececec;
+    height: 0px;
+    width: 86%;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    display: none;
+}
+
+.lineLabel-B {
+    border: 1px solid #ececec;
+    height: 0px;
+    width: 90%;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    display: none;
+}
+
+.mainBodyLabel,
+.mainBodyLabel-B {
+    display: flex;
+}
+
+.meaningLabel {
+    margin-left: 15px;
+    display: none;
+    color: #7d7d7d;
+    text-transform: capitalize;
+}
+
+.btn--Label-A {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.btn--Label-B {
+    display: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.listContainer {
+    margin: 10px;
+    width: 90%;
+    position: static;
+}
+
+.outerMeaningLabel {
+    display: flex;
+}
+
+#synonymLabel {
+    position: relative;
+    left: 20px;
+    color: #9460c8;
+    font-weight: bold;
+}
+
+.capturePara--A {
+    width: 60%;
+    margin-left: 20%;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.bottomLabel-A {
+    display: flex;
+    width: 100%;
+}
+
+.sourceLabel {
+    display: none;
+    margin-left: 15px;
+    font-size: 13px;
+    color: #7d7d7d;
+    text-transform: capitalize;
+}
+
+.link-container {
+    color: #646464;
+    position: relative;
+    top: 12px;
+    left: 20px;
+    font-size: 14px;
+}
+
+.gotoimage {
+    position: relative;
+    left: 30px;
+    top: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:426px) {
+    #body-section--label {
+        width: 100%;
+    }
+
+    .top-content-container-C {
+        width: 60%;
+    }
+
+    .lineLabel {
+        width: 75%;
+    }
+
+    .meaningLabel {
+        position: static;
+    }
+
+    #listLabel {
+        padding-left: 20px;
+    }
+
+    #listLabelB {
+        padding-left: 30px;
+    }
+
+    .capturePara--A {
+        width: 80%;
+        margin-left: 30px;
+        line-height: 1.3;
+    }
+
+    .bottomLabel-A {
+        flex-direction: column;
+    }
+
+    .gotoimage {
+        display: none;
+    }
+
+}
+
+/* 
+@media screen and (min-width:427px) and (max-width:768px) {
+    main{
+        width: 100%;
+    }
+} */
