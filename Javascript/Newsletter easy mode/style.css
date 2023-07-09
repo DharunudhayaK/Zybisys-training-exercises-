@@ -1,0 +1,290 @@
+body {
+    background-color: #36384d;
+}
+
+#section-Label-A {
+    display: flex;
+    width: 630px;
+    margin: auto;
+    border-radius: 15px;
+    height: 450px;
+    position: relative;
+    top: 75px;
+}
+
+.subsection-Label-A {
+    width: 60%;
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.section-label-desc-A {
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 50px 30px 15px 15px;
+    color: #1c2135;
+    text-transform: capitalize;
+    width: 70%;
+}
+
+.section-label-desc-B {
+    margin-left: 15px;
+    width: 90%;
+    line-height: 1.3;
+    font-size: 14px;
+}
+
+.section-label-desc-C {
+    margin-left: 15px;
+    display: flex;
+    width: 90%;
+}
+
+.section-label-desc-content {
+    position: relative;
+    left: 15px;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.section-label-desc-D {
+    margin-left: 15px;
+    color: #323343;
+    font-weight: bold;
+    font-size: 14px;
+    width: 40%;
+}
+
+.section-label-desc-input-A {
+    width: 75%;
+    margin: auto;
+    margin-left: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #cdcdcd;
+}
+
+.section-label-desc-input-B {
+    width: 85%;
+    margin: auto;
+    margin-left: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #232740;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.subsection-Label-B {
+    width: 50%;
+    background-color: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.section-label-img-right-A {
+    width: 94%;
+    height: 100%;
+}
+
+.popup {
+    display: none;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    font-size: 20px;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.section-btn {
+    width: 240px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    background-color: #ff6647;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #ff6647;
+}
+
+#emailCapture {
+    font-weight: bold;
+}
+
+.popupSectionDesc {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #1c2135;
+    text-transform: capitalize;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.m-container {
+    display: flex;
+}
+
+.imgLabel {
+    margin-left: -200px;
+    padding: 10px;
+}
+
+.descPopup {
+    font-size: 14px;
+    text-align: left;
+}
+
+#emailLabel{
+    display: flex;
+}
+
+#validlabel{
+    display: none;
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+
+@media screen and (max-width:425px) {
+    body {
+        background-color: #fff;
+        margin: 0px;
+        padding: 0px;
+        background-image: url(illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 320px;
+    }
+
+    #section-Label-A {
+        /* flex-direction: column-reverse; */
+        width: 100%;
+        height: 100%;
+    }
+
+    .subsection-Label-A {
+        position: relative;
+        top: 35%;
+        background-color: #fff; 
+        width: 100%;    
+        /* border: 1px solid red; */
+        border-radius: 0px;
+        margin-top: 180px;
+        height: 400px;
+        padding: 10px;
+    }
+
+    .section-label-img-A{
+        position: relative;
+        width: 6%;
+    }
+
+    .section-label-desc-A {
+        color: #1c2135;
+        margin-top: 20px;
+        margin-left: 15px;
+        position: relative;
+        width: 90%;
+        font-size: 35px;
+    }
+
+    .section-label-desc-B {
+        margin-left: 15px;
+        position: relative;
+        width: 90%;
+        line-height: 1.3;
+        font-size: 14px;
+    }
+
+    .subsection-Label-B{
+        display: none;
+    }
+
+    .section-label-desc-content {
+        position: relative;
+        width: 100%;
+    }
+
+    .section-label-desc-D {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .section-label-desc-input-A {
+        position: relative;
+        width: 82%;
+    }
+
+    .section-label-desc-input-B {
+        position: relative;
+        width: 89%;
+    }
+
+}
+/*  
+@media screen and (max-width:375px) {
+    body {
+        background-color: #fff;
+        margin: 0px;
+        padding: 0px;
+        background-image: url(illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .subsection-Label-A {
+        position: relative;
+        top: 35%;
+        background-color: #fff;        
+    }
+
+    #section-Label-A {
+        flex-direction: column-reverse;
+    }
+
+    .section-label-img-right-A {
+        display: none;
+    }
+
+    .section-label-desc-A {
+        color: #1c2135;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    .section-label-desc-B {
+        margin-left: 15px;
+        width: 70%;
+        line-height: 1.3;
+        font-size: 14px;
+    }
+
+    .section-label-desc-content {
+        width: 65%;
+    }
+
+    .section-label-desc-D {
+        margin-left: 15px;
+        margin-top: 7px;
+    }
+
+    .section-label-desc-input-A {
+        width: 70%;
+    }
+
+    .section-label-desc-input-B {
+        width: 78%;
+    }
+
+} */
